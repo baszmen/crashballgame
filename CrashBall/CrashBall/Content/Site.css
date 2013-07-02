@@ -1,0 +1,137 @@
+﻿/* initial code*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+    color: #ffffff;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+    a:hover {
+        color: #009f00;
+    }
+
+
+
+/*********************MAIN CODE PART******************/
+
+body {
+    background: url(Images/loginBackground.jpg);
+    background-repeat: repeat;
+}
+
+.loginContainer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    background: url(Images/loggedBackground.jpg);
+    width: 600px;
+    height: 400px;
+}
+
+.inputText {
+    position: relative;
+    left: 80px;
+    top: 80px;
+    height: 85px;
+    width: 440px;
+    text-align: center;
+    border-top: 6px solid #D54636;
+    border-left: 6px solid #D54636;
+    border-bottom: 0;
+    border-right: 0;
+    font-family: Aller Light, monospace;
+    font-size: 30px;
+    font-style: normal;
+    margin-left: -5px;
+    margin-left: -5px;
+}
+
+.buttonContainer {
+    margin-top: 50px;
+    margin-left: 0;
+    position: relative;
+    left: 80px;
+    top: 100px;
+    height: 85px;
+    width: 442px;
+    text-align: center;
+    background-color: #D54636;
+}
+
+img {
+    margin-top: -5px;
+    margin-left: -15px;
+}
+
+img:hover {
+    margin-top: 0;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+
+
+/**********GAME**********/
+
+.game {
+    background: url(Images/loggedBackground.jpg);
+    background-repeat: repeat;
+}
+
+.canvasContainer {
+    width: 700px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.canvas {
+    width: 700px;
+    height: 700px;
+    background: url(Images/boardBackground.png)
+}

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../Scripts/jquery-1.8.2.min.js"></script>
+    <script src="../Scripts/jquery.signalR-1.1.2.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <script src="../Scripts/drawing.js"></script>
+    <script>
+        var offset = 257;
+        var crashBallHub = $.connection.crashBallHub;
+        
+        $(function () {
+            draw();
+            drawWallLeft();
+            drawWallRight();
+            drawWallTop();
+            
+            crashBallHub.client.updateScreen = function (msg) {
+                drawWallLeft();
+                drawWallRight();
+                drawWallTop();
+                var start = 0;
+                for (var index in msg.Players) {
+                    if (msg.Players[index].Id == $.connection.hub.id)
+                        start = msg.Players[index].BoardPosition;
+                }
+
+                var offset = 0;
+                if (start == 1)
+                    offset = 3;
+                else if (start == 2)
+                    offset = 2;
+                else if (start == 3)
+                    offset = 1;
+                else
+                    offset = 0;
+
+                for (index in msg.Players) {
+                    var place = (msg.Players[index].BoardPosition + offset) % 4;
+                    if (place == 0)
+                        drawPlatformBottom(msg.Players[index].Position);
+                    else if (place == 1)
+                        drawPlatformLeft(msg.Players[index].Position);
+                    else if (place == 2)
+                        drawPlatformTop(msg.Players[index].Position);
+                    else
+                        drawPlatformRight(msg.Players[index].Position);
+                }
+            };
+
+            $.connection.hub.start().done(function() {
+                crashBallHub.server.connect();
+            });
+        });
+        
+
+        $(document).keydown(function (e) {
+            if (e.keyCode == 39) {
+                crashBallHub.server.movePlatform(5);
+            } else if (e.keyCode == 37) {
+                crashBallHub.server.movePlatform(-5);
+            }
+        });
+    </script>
+</head>
+    <body class="game" onload="draw();">
+        <div class="canvasContainer">
+        <canvas class="canvas" width="700" height="700" id="canvas"></canvas>
+        </div>
+    </body>
+</html>

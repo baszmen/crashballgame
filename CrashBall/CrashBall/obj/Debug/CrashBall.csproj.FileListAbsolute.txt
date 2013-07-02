@@ -1,0 +1,17 @@
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\obj\Debug\CrashBall.csprojResolveAssemblyReference.cache
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\CrashBall.dll
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\CrashBall.pdb
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\Microsoft.AspNet.SignalR.Core.dll
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\Microsoft.AspNet.SignalR.Owin.dll
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\Microsoft.Web.Infrastructure.dll
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\Newtonsoft.Json.dll
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\Owin.dll
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\Microsoft.AspNet.SignalR.Core.xml
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\Microsoft.AspNet.SignalR.Owin.xml
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\bin\Newtonsoft.Json.xml
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\obj\Debug\CrashBall.dll
+c:\users\mateusz\documents\visual studio 2012\Projects\CrashBall\CrashBall\obj\Debug\CrashBall.pdb
